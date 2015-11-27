@@ -1,9 +1,9 @@
 # ThePlanForMe
 
 
-## M1-M2
+## Month1~Month2
 
-### W1:
+### Week1:
 
 #### Actions:
 
@@ -14,7 +14,7 @@
 
 - 用自增运算符实现加、减、乘、除函数
 
-### W2:
+### Week2:
 
 #### Actions:
 
