@@ -107,7 +107,7 @@ public class MyOperation
 		int ans=0,sign=0;//记录符号
 		if(number2==0){  
 			throw new ArithmeticException("除数不能为0");
-	    }		
+		}
 		if(number1<0){
 			sign^=1;
 			number1=reverse(number1);
