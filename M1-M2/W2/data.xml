@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Languages>
+	<Language>
+		<id>1</id>
+		<name>c</name>
+		<ide>Visual Studio</ide>
+		<descript>简洁紧凑、灵活方便</descript>
+	</Language>
+	<Language>
+		<id>2</id>
+		<name>c++</name>
+		<ide>Visual Studio</ide>
+		<descript>支持多种编程范式</descript>
+	</Language>
+	<Language>
+		<id>3</id>
+		<name>java</name>
+		<ide>Eclipse</ide>
+		<descript>跨平台</descript>
+	</Language>
+	<Language>
+		<id>4</id>
+		<name>php</name>
+		<ide>Komodo</ide>
+		<descript>php是世界上最好的语言</descript>
+	</Language>
+</Languages>
