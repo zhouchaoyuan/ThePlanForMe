@@ -5,7 +5,7 @@
 */
 public class MyStack<E>
 {
-	//节点类
+	//节点类,static使得此类的对象不依赖外围类的对象存在，然而在这里并没有什么卵用
 	private static class MyNode<U>
 	{
 		U item;
