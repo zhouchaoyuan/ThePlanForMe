@@ -36,6 +36,7 @@ class toStringUtil
 		Class c=obj.getClass();
 		// 返回一个描述此 Field（包括其一般类型）的字符串。
 		Field[] fields=c.getDeclaredFields();
+		//使用Stringbuilder作为中间结果而不适用不可变的String
 		StringBuilder sb=new StringBuilder();
 		sb.append("{");
 		for(Field field:fields){
