@@ -1,8 +1,8 @@
 #Java IO系统
 ###File类
 File类表示一个文件集，我们一个可以调用list方法返回一个字符数组，这个数组包含所有的文件名和文件夹名。list还接受一个实现了FilenameFilter接口的类作为参数，以便对返回结果进行筛选！如：
-	
-	```java
+```java
+
 	import java.util.*;
 	import java.io.*;
 	public class Demo{
@@ -17,7 +17,8 @@ File类表示一个文件集，我们一个可以调用list方法返回一个字
 			System.out.println(Arrays.toString(list));
 		}
 	}
-	```
+
+```
 
 ###输入和输出
 包括两种类型，分别是InputStream和OutputStream，他们分别有read()和write()方法。
@@ -48,8 +49,8 @@ File类表示一个文件集，我们一个可以调用list方法返回一个字
 - **1、按行读取字符串：**
 
 我们从一个文件中读取数据转换成字符串，可以使用如下方法（结合`BufferedReader`使用）：
+```java
 
-	```java
 	public String read(String fileName){
 		BufferedReader reader=null;
 		try{
@@ -65,8 +66,9 @@ File类表示一个文件集，我们一个可以调用list方法返回一个字
 			e.printStackTrace();
 		}
 		return null;
-	} 
-	```
+	}
+ 
+```
 
 - **2、按字符读取(使用`StringReader`)：**StringReader可以将字符串作为缓存，然后用read()方法挨个字符（返回int，需转型）读取！
 - **3、按字节读取(使用`DataInputStream`)：**用`ByteArrayInputStream`（继承自`InputStream`）构造一个`DataInputStream`，然后getByte()挨个读取！
@@ -89,8 +91,8 @@ System提供三个静态方法支持我们重定向，分别是：
 - setErr(PrintStream)
 
 对于大量的输出数据我们一般重定向输出到文件，一下是一个例子：
+```java
 
-	```java
 	import java.io.*;
 	public class Demo{
 		public static void main(String[] args)throws IOException{
@@ -109,13 +111,14 @@ System提供三个静态方法支持我们重定向，分别是：
 			System.setOut(console);	
 		}
 	}
-	``` 
+
+``` 
 ps:由于重定向是字节流，所以我们只可以使用字节操作流：`InputStream`和`OutputStream`
 
 ###进程控制
 使用java程序来创建一个进程。在java.lang包中有`ProcessBuilder`，它用来管理一个进程属性集，调用start方法可以创建一个新的 Process 实例。如：
+```java
 
-	```java
     import java.io.*;
     public class OSExecuteDemo
     {
@@ -147,7 +150,8 @@ ps:由于重定向是字节流，所以我们只可以使用字节操作流：`I
     		}
     	}
     }
-	```
+
+```
 输出：
 
     Compiled from "OSExecuteDemo.java"
