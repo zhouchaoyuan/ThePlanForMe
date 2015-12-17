@@ -72,6 +72,7 @@ File类表示一个文件集，我们一个可以调用list方法返回一个字
 
 - **2、按字符读取(使用`StringReader`)：**StringReader可以将字符串作为缓存，然后用read()方法挨个字符（返回int，需转型）读取！
 - **3、按字节读取(使用`DataInputStream`)：**用`ByteArrayInputStream`（继承自`InputStream`）构造一个`DataInputStream`，然后getByte()挨个读取！
+
 #####输出
 - **1、使用PrintWriter（格式化输出）：**`PrintWriter pw=new PrintWriter("file");`
 - **2、使用DataOutputStream：**`DataOutputStream dps=new DataOutputStream(new BufferedOutputStream(new FileOutputStream(fileName)));`
