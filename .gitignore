@@ -1,0 +1,13 @@
+bin/
+gen/
+*~
+~*
+*.diff
+*.patch
+*.bak
+*.class
+.project
+.*proj
+.svn/
+build
+.cache
