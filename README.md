@@ -1,6 +1,6 @@
 # ThePlanForMe
 
-<table border="1">
+<table >
 	<tr>
 		<th>Month</th>
 		<th>Week</th>
