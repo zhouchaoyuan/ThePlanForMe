@@ -9,5 +9,5 @@
 |工厂模式|
 |状态模式|
 |模板方法|
-|适配器模式|
+|[适配器模式](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)|
 
