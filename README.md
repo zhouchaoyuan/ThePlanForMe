@@ -78,7 +78,7 @@
 	</tr>
 	<tr>
 		<th >W5-W8</th>
-		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W5-W8>设计模式</a></td>
+		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W5-W8">设计模式</a></td>
 		<td><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md">适配器模式的简单应用</a></td>
 	</tr>
 </table>
