@@ -6,8 +6,8 @@
 |[单例模式](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)|
 |策略模式|
 |命令模式|
-|状态模式|
-|模板方法|
+|[状态模式](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.md)|
+|[模板方法](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F.md)|
 |[适配器模式](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)|
 |[抽象工厂模式](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)|
 
