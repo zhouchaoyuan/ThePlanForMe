@@ -54,7 +54,7 @@
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W3/%E7%B1%BB%E5%9E%8B%E4%BF%A1%E6%81%AF.md">类型信息</a></td>
 	</tr>
 	<tr>
-		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W3">泛型</a></td>
+		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W3/%E6%B3%9B%E5%9E%8B.md">泛型</a></td>
 	</tr>
 	<tr>
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W3/%E6%95%B0%E7%BB%84.md">数组</a></td>
@@ -65,7 +65,7 @@
 		<td rowspan="5"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/Calculator.java">实现计算器</a></br><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/ListAndMapDemo.java">检测list和map的区别</a></td>
 	</tr>
 	<tr>
-		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W4">Java I/O系统</a></td>
+		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/Java%20IO%E7%B3%BB%E7%BB%9F.md">Java I/O系统</a></td>
 	</tr>
 	<tr>
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/%E6%9E%9A%E4%B8%BE.md">枚举</a></td>
@@ -74,7 +74,7 @@
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/%E6%B3%A8%E8%A7%A3.md">注解</a></td>
 	</tr>
 	<tr>
-		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W4">并发</a></td>
+		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W4/%E5%B9%B6%E5%8F%91.md">并发</a></td>
 	</tr>
 	<tr>
 		<th >W5-W8</th>
