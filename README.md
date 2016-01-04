@@ -81,4 +81,65 @@
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W5-W8">设计模式</a></td>
 		<td><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md">适配器模式的简单应用</a></td>
 	</tr>
+
+	<tr>
+		<th rowspan="10">M3-M4</th>
+		<th >W1</th>
+		<td align="center">Android历史及开发环境搭建</td>
+		<td >eclipse、android studio等环境都尝试搭建一下</td>
+	</tr>
+	<tr>
+		<th >W2</th>
+		<td align="center">创建一个空项目，了解项目结构</td>
+		<td ></td>
+	</tr>
+	<tr>
+		<th >W3</th>
+		<td align="center">常用控件及布局熟悉(TextView，LinearLayout等)</td>
+		<td >实现美团客户端“我的”界面效果</td>
+	</tr>
+	<tr>
+		<th >W4</th>
+		<td align="center">activity、service、fragment生命周期及其相关</td>
+		<td ></td>
+	</tr>
+	<tr>
+		<th >W5</th>
+		<td align="center">动画使用</td>
+		<td ></td>
+	</tr>
+	<tr>
+		<th >W6</th>
+		<td align="center">自定义View</td>
+		<td >利用ViewGroup实现ViewPager</td>
+	</tr>
+	<tr>
+		<th >W7</th>
+		<td align="center">数据持久化(Sharedpreference、File，Sqlite)</td>
+		<td ></td>
+	</tr>
+	<tr>
+		<th rowspan="3">W8</th>
+		<td align="center">网络</td>
+		<td rowspan="3">并发网络获取JSON并解析存储到数据库</td>
+	</tr>
+	<tr>
+		<td align="center">调试及DDMS应用</td>
+	</tr>
+	<tr>
+		<td align="center">混淆、打包过程了解（非必须）</td>
+	</tr>
+	<tr>
+		<th >M5-M6</th>
+		<th >W1-W8</th>
+		<td align="center">文件管理器</td>
+		<td >	
+			(1)展示SDCard目录及文件</br>
+			(2)支持文本文件和图片预览</br>
+			(3)位置记录(下次进入自动跳到相应位置)</br>
+			(4)支持创建、删除和重命名文件</br>
+			(5)删除文件时加入自定义动画</br>
+			(6)支持批量选中、反选、删除
+		</td>
+	</tr>
 </table>
