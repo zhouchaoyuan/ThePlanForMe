@@ -86,7 +86,8 @@
 		<th rowspan="10">M3-M4</th>
 		<th >W1</th>
 		<td align="center">Android历史及开发环境搭建</td>
-		<td >eclipse、android studio等环境都尝试搭建一下</td>
+		<td ><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W1/Eclipse%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">eclipse</a>开发环境搭建</br>
+			<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W1/Android_Studio%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">android studio</a>开发环境搭建</td>
 	</tr>
 	<tr>
 		<th >W2</th>
