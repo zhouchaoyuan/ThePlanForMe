@@ -143,3 +143,10 @@
 		</td>
 	</tr>
 </table>
+
+
+###有用的学习链接
+
+- [Google Android 官网](https://developer.android.com/training/index.html)
+- [Google Android官方教程中文版](http://hukai.me/android-training-course-in-chinese/index.html)
+- [无需翻墙直接拥抱Android](http://www.androiddevtools.cn/)
