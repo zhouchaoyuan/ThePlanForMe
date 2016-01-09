@@ -1,5 +1,7 @@
 #Manifest
 
+> 参考自[这里](http://developer.android.com/guide/topics/manifest/manifest-intro.html#filec)
+
 每一个`Android`应用的根目录都有一个清单(`AndroidManifest.xml`文件，这个清单文件呈现给`Android`系统关于应用程序的一些基本信息,以及你在运行app之前必须拥有的系统信息，`AndroidManifest`的大致功能如下：
 
 - 它为应用程序命名了包名，包名称是应用程序的唯一标识符 `package="..."`
@@ -102,6 +104,3 @@
 ###特性
 
 参见[这里](http://developer.android.com/guide/topics/manifest/manifest-intro.html#filef)
-
-</br></br></br>
-> 参考自[这里](http://developer.android.com/guide/topics/manifest/manifest-intro.html#filec)
