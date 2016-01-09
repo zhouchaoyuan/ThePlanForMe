@@ -91,7 +91,7 @@
 	</tr>
 	<tr>
 		<th >W2</th>
-		<td align="center">创建一个空项目，了解项目结构</td>
+		<td align="center">创建一个空项目，了解<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W2/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.md">项目结构</a></td>
 		<td ></td>
 	</tr>
 	<tr>
