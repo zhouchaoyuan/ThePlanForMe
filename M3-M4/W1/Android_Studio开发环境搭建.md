@@ -27,10 +27,25 @@
 		- Google Repository(建议勾选，包含支持Library的专用库)
 		- Google Play services(建议勾选，包含谷歌服务和客户端库以及示例代码)
 	
-	点击`Install X packages`，即可完成安装，若是安装受阻,说明被墙，可以通过设置代理服务器(见[Proxy Settings]())安装。其他可以勾选的选项包可自行勾选，每项的详细用途参考[这里](https://developer.android.com/tools/help/sdk-manager.html)
+	点击`Install X packages`，即可完成安装，若是安装受阻,说明被墙，可以通过设置代理服务器(见[Proxy Settings](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W1/Proxy_Settings.md))安装。其他可以勾选的选项包可自行勾选，每项的详细用途参考[这里](https://developer.android.com/tools/help/sdk-manager.html)
 - 经过上述的步骤，你现在就可以在`Android Studio`上构建app了。
 
+###三、建立AVD（Android Virtual Device）
 
+1. 启动 Android Virtual Device Manager（AVD Manager）的两种方式：
+	* 用Android Studio, **Tools > Android > AVD Manager**,或者点击工具栏里面Android Virtual Device Manager![image](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W1/AVD.png)；
+	* 在命令行窗口中，把当前目录切换到`<sdk>/tools/` 后执行：
+2. 在AVD Manager 面板中，如下:![AVD Manager](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W1/AVD_Manager.png)点击Create Virtual Device.
+
+3. 在Select Hardware窗口，选择一个设备，比如 Nexus 6，点击Next。
+
+4. 选择列出的合适系统镜像.
+
+5. 校验模拟器配置，点击Finish，出现下图所有的已经建立的设备：![AVD Manager device](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W1/AVD_Manager_device.png)
+
+参考自[这里](https://developer.android.com/tools/devices/managing-avds.html)
+
+###四、自动更新SDK
 对于安装了的`SDK，Android`官方往往更新很快，我们可以设置自动检查更新，以获得最新的SDK，自动检查更新SDK根据以下步骤（[见](https://developer.android.com/tools/help/sdk-manager.html)）：
 
 - 选择`File > Settings > Appearance & Behavior > System Settings > Updates.`
