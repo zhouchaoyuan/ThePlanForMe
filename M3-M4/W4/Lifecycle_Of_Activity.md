@@ -1,6 +1,6 @@
 #Activity
 
-`android`并不像其他编程范式一样从`main()`方法开始执行，它根据生命周期的不同阶段唤起对应的回调函数来执行代码。系统存在启动与销毁一个`activity`的一套有序的回调函数，一下图片展示了`activity`的生命周期：![activity]()，合理利用`activity`的回调函数可以实现以下一些非常重要的功能：
+`android`并不像其他编程范式一样从`main()`方法开始执行，它根据生命周期的不同阶段唤起对应的回调函数来执行代码。系统存在启动与销毁一个`activity`的一套有序的回调函数，一下图片展示了`activity`的生命周期：![activity](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W4/basic-lifecycle.png)，合理利用`activity`的回调函数可以实现以下一些非常重要的功能：
 
 - 使用`app`的时候，不会因为有来电通话或者切换到其他`app`而导致程序`crash`
 - 用户没有激活某个组件时不会消耗宝贵的系统资源
