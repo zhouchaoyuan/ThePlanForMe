@@ -14,7 +14,7 @@
 	- 见[官网](http://developer.android.com/reference/android/app/Activity.html#getPreferences%28int%29)
 - `PreferenceManager`类中的`getDefaultSharePreferences()`方法
 	- 原型[`public static SharedPreferences getDefaultSharedPreferences (Context context)`](http://developer.android.com/reference/android/preference/PreferenceManager.html#getDefaultSharedPreferences%28android.content.Context%29)参数是一个`Context`，static方法，并且自动使用当前应用程序的包名作为前缀来命名`SharedPreferences`文件。
-	- - 见[官网](http://developer.android.com/reference/android/preference/PreferenceManager.html#getDefaultSharedPreferences%28android.content.Context%29)
+	- 见[官网](http://developer.android.com/reference/android/preference/PreferenceManager.html#getDefaultSharedPreferences%28android.content.Context%29)
 
 **注：**`SharedPreferences`文件存放在`/data/data/<package name>/shared_prefs`目录下。
 
@@ -32,10 +32,10 @@
     editor.putString("package_name",MESSAGE_NAME);
     editor.commit();
 
-	SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
-    Log.e("zhouchaoyuan",sharedPreferences.getString("package_name","nothing"));
-
 ```
+
+通过上面的代码，我们运行，可以看到在`DDMS`的`file explorer`下`/data/data/<package name>/shared_prefs`有MainActivity.xml文件，如下：</br>![shared_xml](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W7/shared_xml.png)</br>
+其中数据以键值对的形式明文存储在xml文件里面，如下：
 
 	<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 	<map>
@@ -45,6 +45,15 @@
 
 ###读Shared Preferences
 
-;
+为了从`shared preference`中读取数据，可以通过类似于`getInt()`及`getString(`等方法来读取。在那些方法里面传递我们想要获取的`value`对应的`key`，并提供一个默认的`value`作为查找的`key`不存在时函数的返回值。如下：
+
+```java
+
+	SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
+    Log.e("zhouchaoyuan",sharedPreferences.getString("package_name","nothing"));
+
+```
+
+可以看到了`logcat`输入了红色的信息:</br>`01-17 00:02:46.150 15957-15957/? E/zhouchaoyuan: cn.zhouchaoyuan.firstapplication.MESSAGE`
 
 还是见[中文教学](http://hukai.me/android-training-course-in-chinese/basics/fragments/index.html)吧，详细。 
