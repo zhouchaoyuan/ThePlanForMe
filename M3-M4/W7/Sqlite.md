@@ -30,18 +30,18 @@
 	import static cn.zhouchaoyuan.dao.BookReaderContract.BookEntry.*;
 	public class SQLClause {
     	/*静态导入*/
-    	public static final String REAL_TYPE = "real";
-    	public static final String TEXT_TYPE = " TEXT";
+    	public static final String REAL_TYPE = " real";
+    	public static final String TEXT_TYPE = " text";
     	public static final String COMMA_SEP = ",";
-    	public static final String INTEGER_TYPE = "integer";
+    	public static final String INTEGER_TYPE = " integer";
     	public static final String SQL_CREATE_ENTRIES =
-    	        "CREATE TABLE " + TABLE_NAME + " (" +
-    	                _ID + " INTEGER PRIMARY KEY AUTOINCREMENT" +
-    	                COLUMN_NAME_AUHOR + TEXT_TYPE + COMMA_SEP +
-    	                COLUMN_NAME_NAME + TEXT_TYPE + COMMA_SEP +
-    	                COLUMN_NAME_PRICE + REAL_TYPE + COMMA_SEP +
-    	                COLUMN_NAME_PAGES + INTEGER_TYPE + COMMA_SEP +
-    	        " )";
+        	    "CREATE TABLE " + TABLE_NAME + " (" +
+        	            _ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+        	            COLUMN_NAME_AUHOR + TEXT_TYPE + COMMA_SEP +
+        	            COLUMN_NAME_NAME + TEXT_TYPE + COMMA_SEP +
+        	            COLUMN_NAME_PRICE + REAL_TYPE + COMMA_SEP +
+        	            COLUMN_NAME_PAGES + INTEGER_TYPE +
+        	    " )";
     	public static final String SQL_DELETE_ENTRIES =
         	    "DROP TABLE IF EXISTS " + TABLE_NAME;
 	}
@@ -63,7 +63,7 @@
 	import static cn.zhouchaoyuan.dao.SQLClause.*;
 	public class BookReaderHelper extends SQLiteOpenHelper{
     	/*静态导入*/
-   	 private  Context context;
+   	 	private  Context context;
     	public BookReaderHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
     	    super(context, name, factory, version);
     	    this.context = context;
@@ -93,7 +93,7 @@
 
 ```
 
-这个时候我们不知道是否真的创建了数据库，我们来到`DDMS`的`File Explorer`查看`data/data/cn.zhouchaoyuan.firstapplication/databases`确实创建了一个`BookStore.db`。如下图：</br>![databases](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W7/databases.png)</br>另外我们可以通过`adb shell`操作数据库，将`C:\Users\chaoyuan\AppData\Local\Android\sdk\platform-tools`(我的电脑环境)配置到环境变量中，在dos中键入`adb shell`，然后进入`data/data/cn.zhouchaoyuan.firstapplication/databases`目录，如下:</br>![shell](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W7/shell.png)</br>可以看到`sdk\platform-tools`目录下有`sqlite3`的命令，直接在`shell`键入`sqlite3加数据库名字`即可操作指定数据库。
+这个时候我们不知道是否真的创建了数据库，我们来到`DDMS`的`File Explorer`查看`data/data/cn.zhouchaoyuan.firstapplication/databases`确实创建了一个`BookStore.db`。如下图：</br></br>![databases](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W7/databases.png)</br></br>另外我们可以通过`adb shell`操作数据库，将`C:\Users\chaoyuan\AppData\Local\Android\sdk\platform-tools`(我的电脑环境)配置到环境变量中，在dos中键入`adb shell`，然后进入`data/data/cn.zhouchaoyuan.firstapplication/databases`目录，如下:</br></br>![shell](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W7/shell.png)</br></br>可以看到`sdk\platform-tools`目录下有`sqlite3`的命令，直接在`shell`键入`sqlite3加数据库名字`即可操作指定数据库。
 
 >使用`.table`可以显示所有的表，`.schema`可以显示数据库的建表语句。
 
@@ -166,7 +166,7 @@
 
 ###查询数据
 
-查询数据的方法原型：[`query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query%28java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String,%20java.lang.String%29)
+最简单的查询数据的方法原型：[`query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query%28java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String,%20java.lang.String%29)
 
 - `table` 要查询的表名
 - `columns` 想要显示的列，若为空则返回所有列，不建议设置为空，如果不是返回所有列
@@ -183,8 +183,7 @@
             COLUMN_NAME_NAME,
             COLUMN_NAME_AUHOR
         };
-        String sortOrder =
-                _ID + " DESC";
+        String sortOrder = _ID + " DESC";
 
         Cursor c = db.query(
                 TABLE_NAME,             // The table to query
