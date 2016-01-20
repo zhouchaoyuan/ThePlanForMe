@@ -101,7 +101,7 @@
 	</tr>
 	<tr>
 		<th >W4</th>
-		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W4/Lifecycle_Of_Activity.md">activity</a>、service、<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W4/fragment.md">fragment</a>生命周期及其相关</td>
+		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W4/Lifecycle_Of_Activity.md">activity</a>、<a href="">service</a>、<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W4/fragment.md">fragment</a>生命周期及其相关</td>
 		<td ></td>
 	</tr>
 	<tr>
@@ -150,4 +150,4 @@
 
 - [Google Android 官网](https://developer.android.com/training/index.html)
 - [Google Android官方教程中文版](http://hukai.me/android-training-course-in-chinese/index.html)
-- [无需翻墙直接拥抱Android](http://www.androiddevtools.cn/)
+- [无需科学上网的Android开发资料](http://www.androiddevtools.cn/)
