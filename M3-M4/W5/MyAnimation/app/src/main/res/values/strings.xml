@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Titles -->
+    <string name="app_name">自定义动画 </string>
+    <string name="title_card_flip">翻转卡片</string>
+    <string name="title_zoom_photo">图片缩放</string>
+    <string name="layout_change_label">布局改变动画</string>
+    <string name="layout_change">布局改变</string>
+    <string name="slide_activity">卡片切换</string>
+    <string name="install_studio">Android Studio的搭建</string>
+
+    <!-- hint -->
+    <string name="touch_photo">触摸图片扩大图片</string>
+    <string name="hint_empty_layout_changes">点击右上角按钮动态添加项目</string>
+
+    <!-- action -->
+    <string name="add_list_item">add a list item</string>
+
+</resources>

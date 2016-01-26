@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zoom_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zhouchaoyuan.myanimation.ZoomActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/touch_photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="2dp"
+                android:background="?android:selectableItemBackground"
+                android:onClick="expandImage1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/thumb1" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="?android:selectableItemBackground"
+                android:onClick="expandImage2"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/thumb2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expand_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>
