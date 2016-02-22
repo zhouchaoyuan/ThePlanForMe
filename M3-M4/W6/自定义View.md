@@ -53,7 +53,7 @@
 
 3、为了正确的绘制你的`view`，你需要知道`view`的大小。复杂的自定义`view`通常需要根据在屏幕上的大小与形状执行多次`layout`计算。而不是假设这个`view`在屏幕上的显示大小。即使只有一个程序会使用你的`view`，仍然是需要处理屏幕大小不同，密度不同，方向不同所带来的影响。
 
-例如我们对所以子View进行横向排列，每一个占据一个手机屏幕大小，代码可以如下：
+例如我们对所以子View进行横向排列，每一个占据一个父`view`大小，代码可以如下：
 
 ```java
 
@@ -372,9 +372,6 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Resources res = getResources();
-
         setContentView(R.layout.main);
     }
 }
