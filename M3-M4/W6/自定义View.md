@@ -181,7 +181,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
 效果图如下：
 
-![toggleButton](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W6/toggleButton.gif)
+![toggleButton](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W6/toggleButton.gif)
 
 自定义view的代码：
 
