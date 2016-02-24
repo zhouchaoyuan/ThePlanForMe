@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae6e6">
+    <!-- 头部导航 -->
+    <include layout="@layout/actionbar_user" />
+
+    <!-- 未登陆状态下，可以滚动 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:scrollbars="none">
+
+        <!-- 滚动部分全部为垂直线性排列 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 个人账户logo部分 -->
+            <include layout="@layout/account_layout" />
+            <!-- 订单部分 -->
+            <include layout="@layout/order_layout" />
+            <!-- 售后服务部分 -->
+            <include layout="@layout/after_service_layout" />
+            <!-- 美团钱包 -->
+            <include layout="@layout/item_user_wallet_layout" />
+            <!-- 抵用券 -->
+            <include layout="@layout/item_user_voucher_layout" />
+            <!-- 每日推荐 -->
+            <include layout="@layout/item_user_recommend_layout" />
+            <!-- 我要合作 -->
+            <include layout="@layout/item_user_cooperation_layout" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
