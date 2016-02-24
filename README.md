@@ -97,7 +97,7 @@
 	<tr>
 		<th >W3</th>
 		<td align="center">常用<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W3/%E6%8E%A7%E4%BB%B6.md">控件</a>及<a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W3/%E5%B8%83%E5%B1%80.md">布局</a>熟悉(TextView，LinearLayout等)</td>
-		<td >实现美团客户端“我的”界面效果</td>
+		<td ><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W3/%E5%AE%9E%E7%8E%B0%E7%BE%8E%E5%9B%A2%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%88%91%E7%9A%84%E7%95%8C%E9%9D%A2%E6%95%88%E6%9E%9C.md">实现美团客户端“我的”界面效果</a></td>
 	</tr>
 	<tr>
 		<th >W4</th>
