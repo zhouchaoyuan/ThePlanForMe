@@ -1,4 +1,4 @@
-#Manifest
+# Manifest
 
 > 参考自[官网](http://developer.android.com/guide/topics/manifest/manifest-intro.html)
 
@@ -13,7 +13,7 @@
 - 它表明应用程序需要的最小的`Android API`版本
 - 它列出该应用程序必须链接的库。
 
-##AndroidManifest的结构
+## AndroidManifest的结构
 
 下面展示了Manifest的基本结构和一些可以在Manifest出现的标签以及每个标签的属性
 
@@ -135,7 +135,7 @@
 
 当我们启动一个组件时，Android为这个组件的子类创建一个实例，如果子类没有指定，就创建组件基类的实例。
 
-#####Multiple values(多重值)
+##### Multiple values(多重值)
 
 如果一个属性值要被是赋值很多次，这个标签可以一直重复，从而替代一行只有一个标签多个值的情况，如下，一个`intent-filter`可以多个`actions`:
 
@@ -146,28 +146,28 @@
 	    . . .
 	</intent-filter>
 
-#####Resource values(资源值)
+##### Resource values(资源值)
 
 一些属性值可以展现给用户，如一个代表activity的标签和图标，这些属性值必须是本地的且来自资源文件或者主题文件，资源属性值的表达式格式如下：</br>`@[package:]type:name`</br>,另外，当资源文件和应用程序在一个包目录下时包名可以被省略，直接写成特定类型的资源，如：“String”，“drawable”，然后写上想要配置的特定的文件的名称，例如：</br>`<activity android:icon="@drawable/smallPic" . . . >`</br>主题的属性值也可以通过类似的方式，但不是一个 `@` 开头，而是一个 `?` 开头，如下：</br>`?[package:]type:name`</br>
 
-#####字符串值(String values)
+##### 字符串值(String values)
 
 当一个属性值是一个字符串时，双重反斜杠`\\`用来转义，如`\\n`代表一个换行符，`\\uxxxx`代表一个`Unicode`字符
 
-###文件特性
+### 文件特性
 接下来这部分展现了`manifest`文件时如何实现`Android`的功能的。
 </br>
 >参见[官网](http://developer.android.com/guide/topics/manifest/manifest-intro.html#filef)
 
-#####Intent Filters
+##### Intent Filters
 
 `intents`用来激活应用程序的核心组件(`activities`，`services`，`broadcast receivers`)，它是描述期望行动的一系列相关信息，包括被执行的数据，应执行的组件的类别以及一些其他相关的指令，安卓系统定位一个合适的组件来响应intent，如果需要的的话，就通过这个意图来实例化这个组件的实例。</br>组件声明他们通过`intent-filters`可以响应什么样的`intents`，因为`Android`系统在启动组件之前必须知道一个组件掌控着什么样的`intents`，`intent filters`在`manifest`可以使用`<intent-filter>`指定。一个组件可以有很多的`filters`，但是每个一描述不同的属性。</br>如果一个`intent`明确的指定了要启动的组件，那么`filter`就不会起作用。当`intent`没有明确指定目标，并且通过了`filter`组件才会被启动。更详细的资料请看[Intents andIntent Filters.](http://developer.android.com/guide/components/intents-filters.html)
 
-#####Icons and Labels
+##### Icons and Labels
 
 一些元素有`icon`和`label`属性，有些还有`description`属性，这个属性可以通过屏幕展现给用户，例如`<permission>`元素这三个属性都有，当用户请求这个权限时，这三个属性定义的东西将呈现给用户。</br>容器元素如果定义了`icon`和`label`属性那么他们的子元素将默认具有相同的定义。这样，如果在`<application>`中定义了他们，所有的组件都将默认具有相同的设置，组件也一样。</br>对`intent filter`设置的`icon`和`label`属性用来代表一个可匹配的组件，例如，定义了`"android.intent.action.MAIN" and"android.intent.category.LAUNCHER"`的`activity`将在应用版上显示，所用的图标就是他们提供的。</br>
 
-#####Permissions
+##### Permissions
 
 权限用于为访问设备上的代码和数据提供约束条件。这些限制用于保护易被误用的代码和数据，避免不良的用户体验。</br>
 权限都需要单独进行定义，一个标签代表一个约束。例如：
@@ -196,7 +196,7 @@
 </br>
 注意，这个示例不但声明了权限还使用了权限。其他应用想要访问这个`Activity`必须取得相应的权限</br>如果还是这个例子，某权限在其他的地方进行了声明，那么这里就不用`<permission>`进行声明，但是还是需要使用`<uses-permission>`来获取相应权限。</br>`<permission-tree>`元素，声明了定义与代码中的一组权限的命名空间。`<permission-group>`定义了一个权限组，包含其他地方声明的权限。他只影响如何以组的形式提供权限。该元素不能指定已经属于一个组的权限；他只是提供一个组名。一个指定了组的权限可在`<permission>`中使用`permissionGroup`属性访问。
 
-#####Libraries
+##### Libraries
 
 所有的应用都默认包含了`Android`工具包，其中包含了构建app所用的基本组件。</br>当然，也有一些功能在其他一些包中提供，如果你要使用这些包，必须明确的指定他们。`Manifest`中使用`<uses-library>`元素来包含他们。
 

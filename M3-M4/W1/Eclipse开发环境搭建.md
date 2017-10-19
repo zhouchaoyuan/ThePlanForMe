@@ -1,9 +1,9 @@
-#Eclipse开发环境搭建
+# Eclipse开发环境搭建
 
 在还没有`Android Studio`的时候，`Android`工程师都使用`Eclipse`安装`ADT(Android Development Toolkit)`插件来开发`Android`应用的，这也是谷歌官方推荐的。
 > 不过目前`Android`官网已经没有用Eclipse开发的环境搭建教程了，在[http://developer.android.com/tools/sdk/eclipse-adt.html](http://developer.android.com/tools/sdk/eclipse-adt.html)还有ADT的下载，但是在[Installing the Eclipse Plugin](http://developer.android.com/tools/help/adt.html)已经建议说“You should migrate your app development projects to Android Studio as soon as possible（你必须尽快把你的app开发工程迁移到`Android Studio`上）”，也就是说`Eclipse`已经被抛弃了。
 
-###Eclipse的搭建方法如下：
+### Eclipse的搭建方法如下：
 
 - 首先先下载JDK([Java SE Development Kit 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html))，下载完JDK之后配置系统环境变量`JAVA_HOME`，操作步骤为“系统高级设置->高级->环境变量”，然后添加系统变量，名字为`JAVA_HOME`，变量值为`C:\Program Files\Java\jdk1.8.0_45`（假设JDK为此安装路径）。
 - 安装[Eclipse](http://www.eclipse.org/downloads/)，一般情况下我们都已经安装了Eclipse，所以使用此法。

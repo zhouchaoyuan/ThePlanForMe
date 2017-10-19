@@ -1,8 +1,8 @@
-#Service
+# Service
 
 服务（`Service`）是Android实现后台运行的解决方案，它非常适合用于去执行那些不需要和用户交互而且还要求长期运行的任务。服务可由其他应用组件启动，而且即使用户切换到其他应用，服务仍将在后台继续运行。 此外，组件可以绑定到服务，以与之进行交互，甚至是执行进程间通信 (`IPC`)。 例如，服务可以处理网络事务、播放音乐，执行文件 I/O 或与内容提供程序交互，而所有这一切均可在后台进行。 服务运行于主线程，所以有可能阻塞主线程，耗时操作应该放在子线程中。
 
-###分类
+### 分类
 服务大概分为两种：
 
 - 启动服务：组件使用[`startService()`](http://developer.android.com/intl/zh-cn/reference/android/content/Context.html#startService%28android.content.Intent%29)启动，这种方式会回调[`onStartCommand()`](http://developer.android.com/intl/zh-cn/reference/android/app/Service.html#onStartCommand%28android.content.Intent,%20int,%20int%29)
@@ -10,7 +10,7 @@
 
 >当然，服务也可以同时以这两种方式运行，问题只是在于您是否实现了一组回调方法：`onStartCommand()`（允许组件启动服务）和`onBind()`（允许绑定服务）。 
 
-###在manifest注册service
+### 在manifest注册service
 
 和`Activity`一样，我们必须要注册`service`，需添加`<service>`元素作为`<application>`元素的子元素。例如：
 
@@ -24,7 +24,7 @@
 
 具体的标签使用见[`<service>`](http://developer.android.com/intl/zh-cn/guide/topics/manifest/service-element.html)
 
-###生命周期
+### 生命周期
 
 `Service`的生命周期流程图如下：</br>![service_lifecycle](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W4/service_lifecycle.png)</br>
 服务的生命周期比 Activity 的生命周期要简单得多。但是，密切关注如何创建和销毁服务反而更加重要，因为服务可以在用户没有意识到的情况下运行于后台。
@@ -48,14 +48,14 @@
 - `onDestroy()`
 	- 当服务不再使用且将被销毁时，系统将调用此方法。服务应该实现此方法来清理所有资源，如线程、注册的侦听器、接收器等。 这是服务接收的最后一个调用。 
 
-###创建启动服务
+### 创建启动服务
 
 从传统上讲，您可以扩展两个类来创建启动服务：
 
 - `Service`：这是适用于所有服务的基类。扩展此类时，必须创建一个用于执行所有服务工作的新线程，因为默认情况下，服务将使用应用的主线程，这会降低应用正在运行的所有`Activity`的性能。 
 - `IntentService`：这是`Service`的子类，它使用工作线程逐一处理所有启动请求。如果您不要求服务同时处理多个请求，这是最好的选择。 您只需实现[`onHandleIntent()`](http://developer.android.com/intl/zh-cn/reference/android/app/IntentService.html#onHandleIntent%28android.content.Intent%29)方法即可，该方法会接收每个启动请求的`Intent`使您能够执行后台工作。 
 
-####扩展Service
+#### 扩展Service
 
 组件通过调用`startService()`启动，并且回调`Service`的`onStartCommand()`方法，下面示例：
 
@@ -138,7 +138,7 @@
 
 	<service android:name="cn.zhouchaoyuan.component.ExampleService"></service>
 
-####扩展IntentService
+#### 扩展IntentService
 
 扩展自`IntentService`的服务执行以下操作：
 
@@ -191,7 +191,7 @@
 
 	<service android:name="cn.zhouchaoyuan.component.ExampleIntentService"></service>
 
-###创建绑定服务
+### 创建绑定服务
 
 `bindService()`原型：[`public abstract boolean bindService (Intent service, ServiceConnection conn, int flags)`](http://developer.android.com/intl/zh-cn/reference/android/content/Context.html#bindService%28android.content.Intent,%20android.content.ServiceConnection,%20int%29)
 

@@ -1,4 +1,4 @@
-###ActionBar
+### ActionBar
 
 [总体介绍](http://hukai.me/android-training-course-in-chinese/basics/actionbar/index.html)
 

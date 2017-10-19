@@ -1,4 +1,4 @@
-#自定义View
+# 自定义View
 
 `Android`里面定义的view类都继承自`View`。自定义的`view`也可以直接继承`View`，或者你可以通过继承既有的一个子类(例如`Button`或`ImageView`)来节约一点时间。自定义的view应该具备:
 
@@ -7,7 +7,7 @@
 - 发出可访问的事件
 - 能够兼容`Android`的不同平台
 
-###自定义View的绘制
+### 自定义View的绘制
 
 自定义`View`首先是要自定义他的外观，我们可以根据自己的要求来绘制。`Android`的view绘制流程是从`ViewRootImpl`的`performTraversals()`开始的，然后依次执行以下三个主要函数：
 
@@ -64,7 +64,7 @@ for (int i = 0; i < getChildCount(); i++) {
 
 ```
 
-###定义自定义属性
+### 定义自定义属性
 
 自定义view可以通过XML添加和改变样式，满足如下：
 
@@ -128,7 +128,7 @@ public ToggleButton(Context context, AttributeSet attrs) {
 获取了这些属性之后便可以通过这两个值来设置了。
 >当`view`的某些内容发生变化的时候，需要调用`invalidate()`来通知系统对这个`view`进行`redraw()`，当某些元素变化会引起组件大小变化时，需要调用`requestLayout()`方法。调用时若忘了这两个方法，将会导致`hard-to-find bugs`。
 
-###使得View可交互
+### 使得View可交互
 
 对于我们自定义的`view`，用户应该可以感受到UI上的微小变化，并对模仿现实世界的细微之处反应强烈，这个时候就要求我们要很好的处理输入的手势。在`Android`中最常用的输入事件是`touch`，它会触发`onTouchEvent(android.view.MotionEvent)`的回调。可以重写这个方法来处理touch事件：
 
@@ -172,12 +172,12 @@ public boolean onTouchEvent(MotionEvent event) {
 }
 
 ```
-###自定义View的优化
+### 自定义View的优化
 
 - 如在onDraw里面尽量避免不必要的操作，也就是说被频繁调用的方法要以尽量少的步骤完成要做的事情
 - 使用硬件加速，详细见[这里](http://hukai.me/android-training-course-in-chinese/ui/custom-view/optimize-view.html)
 
-###总的一个例子
+### 总的一个例子
 
 效果图如下：
 

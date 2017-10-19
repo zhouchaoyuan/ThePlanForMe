@@ -1,8 +1,8 @@
-#Sharedpreferences
+# Sharedpreferences
 
 `Sharedpreference`采用键值对集合来保存数据，也就是说每保存一条数据的时候我们要提供一个对应的键，并且这种方式支持多种数据类型的存储。`Sharedpreference`提供了读写的便利方法。
 
-###获取SharedPreferences
+### 获取SharedPreferences
 
 大概有三种方法，分别如下：
 
@@ -18,7 +18,7 @@
 
 **注：**`SharedPreferences`文件存放在`/data/data/<package name>/shared_prefs`目录下。
 
-###写Shared Preferences
+### 写Shared Preferences
 
 为了写`shared preferences`文件，需要通过执行edit()创建一个[`SharedPreferences.Editor`](http://developer.android.com/reference/android/content/SharedPreferences.Editor.html)。
 
@@ -43,7 +43,7 @@
 	</map>
 
 
-###读Shared Preferences
+### 读Shared Preferences
 
 为了从`shared preference`中读取数据，可以通过类似于`getInt()`及`getString(`等方法来读取。在那些方法里面传递我们想要获取的`value`对应的`key`，并提供一个默认的`value`作为查找的`key`不存在时函数的返回值。如下：
 

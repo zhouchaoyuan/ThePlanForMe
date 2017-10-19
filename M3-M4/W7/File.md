@@ -1,8 +1,8 @@
-#File
+# File
 
 文件存储是`Android`中最基本的一种数据存储方式，它不会对存储的内容进行任何的格式化处理，所有的数据都原封不动的保存到文件当中，因而它比较适合存储一些简单的文本和二进制数据。
 
-###内外部存储的一些关联和区别
+### 内外部存储的一些关联和区别
 
 - `Internal storage:`
 	- 总是可用的
@@ -18,9 +18,9 @@
 
 >Tip: 尽管app是默认被安装到internal storage的，我们还是可以通过在程序的manifest文件中声明android:installLocation 属性来指定程序安装到external storage
 
-###External Storage保存文件
+### External Storage保存文件
 
-####声明
+#### 声明
 
 为了写数据到external storage, 必须在你[manifest](https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M3-M4/W2/Manifest.md)文件中请求WRITE_EXTERNAL_STORAGE权限：
 
@@ -29,7 +29,7 @@
 	    ...
 	</manifest>
 
-####使用
+#### 使用
 
 当然`external storage`可能是不可用的，比如遇到`SD`卡被拔出等情况时。因此在访问之前应对其可用性进行检查。我们可以通过执行 [`Environment.getExternalStorageState()`](http://developer.android.com/reference/android/os/Environment.html#getExternalStorageState%28%29)来查询`external storage`的状态。若返回状态为[`Environment.MEDIA_MOUNTED`](http://developer.android.com/reference/android/os/Environment.html#MEDIA_MOUNTED), 则可以读写，如：
 
@@ -41,7 +41,7 @@
 	}
 
 ```
-####分类
+#### 分类
 
 `external storage`可能会保存下面两种类型的文件
 
@@ -78,7 +78,7 @@
 
 ```
 
-###Internal Storage保存文件
+### Internal Storage保存文件
 
 方法一：当保存文件到internal storage时，可以通过执行下面两个方法之一来获取合适的目录作为`FILE`的对象：
 
@@ -143,7 +143,7 @@
 
 ```
 
-###删除文件
+### 删除文件
 
 - 在不需要使用某些文件的时候应删除它。删除文件最直接的方法是直接执行文件的delete()方法
 

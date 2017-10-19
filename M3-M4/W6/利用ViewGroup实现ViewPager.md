@@ -1,6 +1,6 @@
-#利用ViewGroup实现ViewPager
+# 利用ViewGroup实现ViewPager
 
-###简单几项功能
+### 简单几项功能
 
 - 手指触屏缓慢滑动超过一半会切页
 - 手指触屏缓慢滑动`ViewPager`也随着滑动
@@ -9,11 +9,11 @@
 - 能实现切页回调方法处理所需`Tab`
 - 简单的`Adapter`提供数据
 
-###效果图
+### 效果图
 
 ![效果图](https://raw.githubusercontent.com/zhouchaoyuan/ThePlanForMe/master/M3-M4/W6/ViewPager.gif)
 
-###简单原理
+### 简单原理
 
 - 大概就是将子`View`横向整齐排列，每个子`View`的宽度和屏幕宽度一样，即第二个子`View`左上角坐标是`(x,0)`，第三个子`View`左上角坐标是`(2x,0)`等，然后通过`scrollBy(int x, int y)`和`scrollTo(int x, int y)`对`ViewGroup`进行操作来实现。简单来说`scrollBy`是相对偏移而`scrollTo`是绝对偏移，详细看郭神[Demo](http://blog.csdn.net/guolin_blog/article/details/48719871)
 - 一般自定义View会重写以下函数

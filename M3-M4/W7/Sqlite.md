@@ -1,6 +1,6 @@
-#Sqlite
+# Sqlite
 
-###架构（Schema）与契约类（Contract）
+### 架构（Schema）与契约类（Contract）
 架构表示数据库如何组织的正式声明，它体现于您用于创建数据库的`SQL`语句，它有助于创建伴随类，即契约类，契约类是用于定义`URI`、表格和列名称的常数的容器。契约类允许您跨同一软件包中的所有其他类使用相同的常数。 您可以在一个位置更改列名称并使其在您整个代码中传播。以下是一个契约类：
 
 ```java
@@ -50,7 +50,7 @@
 
 就像您在设备的内部存储中保存文件那样，`Android`将您的数据库保存在私人磁盘空间，即关联的应用。您的数据是安全的，因为在默认情况下，其他应用无法访问此区域。
 
-###使用SQLiteOpenHelper创建DB
+### 使用SQLiteOpenHelper创建DB
 
 为了管理`Android`里面的数据库，系统提供我们一个`SQLiteOpenHelper`，这是一个抽象类，我们需要自己实现子类并且重写抽象方法`public void onCreate(SQLiteDatabase db)`和`public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)`。然后通过`getReadableDatabase()`或者`getWritableDatabase()`获得一个`SQLiteDatabase`，当然如果存在了要创建的数据库名字，那么`public void onCreate(SQLiteDatabase db)`不会执行。实例如下：
 
@@ -99,7 +99,7 @@
 
 因为`onCreate`这个方法只会被执行一次，所以我们可以通过数据库的版本信息来升级数据库，调用`onUpgrade`实现数据库的更新。
 
-###添加数据
+### 添加数据
 
 添加数据的方法原型：[`public long insert (String table, String nullColumnHack, ContentValues values)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insert%28java.lang.String,%20java.lang.String,%20android.content.ContentValues%29)
 
@@ -123,7 +123,7 @@
 
 ```
 
-###更新数据
+### 更新数据
 
 更新数据的方法原型：[`public int update (String table, ContentValues values, String whereClause, String[] whereArgs)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#update%28java.lang.String,%20android.content.ContentValues,%20java.lang.String,%20java.lang.String[]%29)
 
@@ -144,7 +144,7 @@
 
 ```
 
-###删除数据
+### 删除数据
 
 和查询信息一样，删除数据同样需要提供一些删除标准。DB的API提供了一个防止SQL注入的机制来创建查询与删除标准。删除数据的方法原型：[`public int delete (String table, String whereClause, String[] whereArgs)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#delete%28java.lang.String,%20java.lang.String,%20java.lang.String[]%29)
 
@@ -164,7 +164,7 @@
 
 ```
 
-###查询数据
+### 查询数据
 
 最简单的查询数据的方法原型：[`query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy)`](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query%28java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String[],%20java.lang.String,%20java.lang.String,%20java.lang.String%29)
 
@@ -207,7 +207,7 @@
 
 ```
 
-###直接使用SQL操作数据库
+### 直接使用SQL操作数据库
 
 虽然Android提供了非常多的API来实现增删改查，我们也可以通过直接书写几乎是SQL语句的来答案我们的目的，如下：
 
