@@ -81,7 +81,6 @@
 		<td align="center"><a href="https://github.com/zhouchaoyuan/ThePlanForMe/tree/master/M1-M2/W5-W8">设计模式</a></td>
 		<td><a href="https://github.com/zhouchaoyuan/ThePlanForMe/blob/master/M1-M2/W5-W8/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md">适配器模式的简单应用</a></td>
 	</tr>
-
 	<tr>
 		<th rowspan="10">M3-M4</th>
 		<th >W1</th>
@@ -146,7 +145,7 @@
 </table>
 
 
-###有用的学习链接
+### 有用的学习链接
 
 - [Google Android 官网](https://developer.android.com/training/index.html)
 - [Google Android官方教程中文版](http://hukai.me/android-training-course-in-chinese/index.html)
