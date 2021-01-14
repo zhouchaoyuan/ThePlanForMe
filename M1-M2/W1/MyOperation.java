@@ -36,7 +36,7 @@ public class MyOperation
 	/*
 	public static int add(int number1,int number2){
 		if(number2==0)
-			return number1;
+			return number1; 
 		int xorSum=number1^number2;
 		int andSum=number1&number2;
 		return add(xorSum,andSum<<1);
