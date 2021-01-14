@@ -5,7 +5,7 @@
 *
 * 一开始我add函数里面是这样的
 * for(int i=0;i<number2;i++){
-*		number1++;
+*		number1++; 
 * }
 * return number1;
 *
